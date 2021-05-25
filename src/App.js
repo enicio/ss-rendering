@@ -6,7 +6,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-       - CBD -
+       <h1>- CBD -</h1> 
+       <p>The Server side render version</p>
       </header>
     </div>
   );
