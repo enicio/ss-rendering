@@ -5,14 +5,15 @@
   align-items: center;
 }
 
-
 .main {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
 }
 
 .delails_left {
   display: flex;
+  margin-top: 143px;
+  margin-left: 300px;
 }
 
 .delails_left .delails_left_woman {
@@ -22,6 +23,13 @@
   height: 767px;
   margin-left: 60px;
 }
+
+.details-right {
+  /* background-color: tomato; */
+  margin-left: 100px;
+  margin-right: -100px;
+}
+
 
 /* @media (prefers-reduced-motion: no-preference) {
   .App-logo {

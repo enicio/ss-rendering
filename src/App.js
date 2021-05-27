@@ -15,7 +15,9 @@ function App() {
           <img className="delails_left_woman" src='./assets/image/image.png' alt="woman writing" />
         </div>
         <Content />
-        <Details />
+        <div className="details-right">
+          <Details />
+        </div>
       </div>
     </div>
   );
