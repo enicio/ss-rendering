@@ -1,13 +1,11 @@
 .header {
-  position: absolute;
-  background: linear-gradient(180deg, #7A57FD 0%, #6135D7 100%);
-  box-shadow: 4px 2px 14px rgba(0, 0, 0, 0.05);
+  /* position: absolute; */
   width: 1167px;
   height: 48px;
-  top: 27px;
-  left: 526px;
+  margin-top: 27px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header .header__logo{
@@ -20,6 +18,7 @@
 .header .header__menu {
   width: 100%;
   display: flex;
+  align-items: center;
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
@@ -35,15 +34,27 @@
 
 .header .header__menu p {
   margin: 0 15px 0 15px;
+  cursor: pointer;
 }
 
 .header .header__button {
   width: 165px;
   height: 48px;
-  left: 1528px;
-  top: 27px;
 
   background: #FFD74F;
   box-shadow: 1px 3px 11px -3px rgba(255, 231, 150, 0.45);
   border-radius: 4px;
+  border: none;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: #6F48EC;
 }
