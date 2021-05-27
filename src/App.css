@@ -1,3 +1,15 @@
+.delails_left {
+  display: flex;
+}
+
+.delails_left .delails_left_woman {
+  position: absolute;
+  /* z-index: 100; */
+  width: 384px;
+  height: 767px;
+  margin-left: 60px;
+}
+
 .App {
   text-align: center;
 }
