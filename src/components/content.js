@@ -16,16 +16,20 @@ function Content() {
         for your customised private lessons!
       </p>
 
-      <input className="content__input" type="text"/>
-      <label className="content__label">
-        I'M A TEACHER
-        <input type="radio" name="I'M A TEACHER"/>
-       </label>
-       <label className="content__label">
-        I'M A STUDENT
-        <input type="radio" name="I'M A STUDENT"/>
-      </label>
+      <input className="content__input" type="text" placeholder="Type here what are you looking for"/>
+      <div className="content__form__container">
+      <form className="content__form">
+        <label htmlFor="teacher" className="content__label">
+          <input id="teacher" type="radio" name="whoiam"/>
+          I'M A TEACHER
+        </label>
+        <label htmlFor="student" className="content__label">
+          <input id="student" type="radio" name="whoiam"/>
+          I'M A STUDENT
+        </label>
+      </form>
       <button className="content__button" type="button" >SEARCH</button>
+      </div>
     </section>
   );
 }
