@@ -1,0 +1,21 @@
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__form input {
+  width: 100%;
+}
+
+.modal__form button {
+  width: 20%;
+  margin-left: 78%;
+}
+
+.modal__closebutton {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+}

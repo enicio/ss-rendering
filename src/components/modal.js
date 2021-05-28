@@ -1,6 +1,8 @@
 import React from 'react';
 import Modal from 'react-modal';
 
+import './modal.css'
+
 const customStyles = {
   content : {
     top                   : '50%',
@@ -8,7 +10,11 @@ const customStyles = {
     right                 : 'auto',
     bottom                : 'auto',
     marginRight           : '-50%',
-    transform             : 'translate(-50%, -50%)'
+    transform             : 'translate(-50%, -50%)',
+    width: '525px',
+    height: '479px',
+    background: '#6A40E4',
+    'border-radius': '15px'
   }
 };
 
@@ -38,18 +44,25 @@ function ModalF(props){
         {/* <button onClick={openModal}>Open Modal</button> */}
         <Modal
           isOpen={modalIsOpen}
-          onAfterOpen={afterOpenModal}
+          // onAfterOpen={afterOpenModal}
           onRequestClose={closeModal}
           style={customStyles}
           contentLabel="Example Modal"
+          // className="modal"
         >
 
-          <h2 ref={_subtitle => (subtitle = _subtitle)}>Hello</h2>
-          <button onClick={closeModal}>close</button>
-          <div>I am a modal</div>
-          <form>
-            <input />
-            <input />
+          {/* <h2 ref={_subtitle => (subtitle = _subtitle)}>Hello</h2> */}
+          <button className="modal__closebutton" onClick={closeModal}>close</button>
+          <h2>Get Started</h2>
+          <h2>Just Login</h2>
+          <form className="modal__form">
+            <label htmlFor="username">
+              <input type="text" id="username" className="modal__input" />
+            </label>
+            <label htmlFor="password">
+              <input type="text" id="password" className="modal__input" />
+            </label>
+            <button type="submit">Login</button>
           </form>
         </Modal>
       </div>
