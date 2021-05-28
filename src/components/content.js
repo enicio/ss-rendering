@@ -21,12 +21,12 @@ function Content() {
       <div className="content__form__container">
       <form className="content__form">
         <label htmlFor="teacher" className={(checkbox)? "teste" : "teste2"}>
-          <span className="checkmark"></span>
+          <span className={(checkbox)? "checked":"unchecked"}></span>
           <input  onClick={() => setCheckbox(!checkbox)} id="teacher" type="radio" name="whoiam" checked={checkbox} />
           I'M A TEACHER
         </label>
         <label htmlFor="student" className={(checkbox)? "teste2" : "teste"}>
-          <span className="checkmark"></span>
+          <span className={(checkbox)? "unchecked":"checked"}></span>
           <input onClick={() => setCheckbox(!checkbox)} id="student" type="radio" name="whoiam" checked={!checkbox} />
           I'M A STUDENT
         </label>

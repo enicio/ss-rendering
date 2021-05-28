@@ -2,7 +2,7 @@
   width: 604px;
   height: 452px;
   margin-top: 143px;
-  margin-left: 50px;
+  margin-left: 40px;
 }
 
 .content .content__title {
@@ -78,6 +78,10 @@
   padding: 5px;
 }
 
+.content__form input {
+  display: none;
+}
+
 .content__label {
   /* width: 162px;
   background: #7955E8;
@@ -130,13 +134,33 @@
   color: #FFFFFF;
 }
 
-/* .content__label .checkmark {
+.checked::before {
+  position: absolute;
+  content: ' ';
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FFD74F;
+}
+
+.checked {
+  content: '56';
   width: 15px;
   height: 15px;
+  /* border-radius: 50%; */
+  border-bottom: 2px solid green;
+  border-right: 4px solid green;
+  /* background-color: transparent; */
+  transform: rotate(45deg);
+  /* display: none; */
+}
+
+.unchecked {
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
-  background-color: red;
-  display: none;
-} */
+  background: #FFFFFF;
+}
 
 /* .content__label input {
   display: none;

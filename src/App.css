@@ -7,13 +7,16 @@
 
 .main {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  max-width: 90%;
 }
 
 .delails_left {
   display: flex;
   margin-top: 143px;
-  margin-left: 300px;
+  margin-left: 210px;
+  /* height: 760px; */
+  width: 510px;
 }
 
 .delails_left .delails_left_woman {
@@ -30,12 +33,21 @@
   margin-right: -100px;
 }
 
-.shapeamarelo {
+/* .shapeamarelo {
   margin-top: 180px;
   margin-left: -50px;
   z-index: 10;
-}
+} */
 
+
+.shapeamarelo {
+  position: relative;
+    z-index: 10;
+    top: 472px;
+    left: -54px;
+    height: 193px;
+    width: 193px;
+}
 /* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

@@ -2,15 +2,19 @@
   display: flex;
   justify-content: center;
   width: 385px;
-  height: 956px;
+  height: 766px;
  }
 
 .details .details__shape-1 {
-  position: absolute;
-  margin-top: 45px;
+  top: 130px;
+  position: relative;
+  /* margin-top: 45px; */
+  height: 722px;
+  left: -12px;
 }
 
 .details .details__shape-2 {
   position: absolute;
   margin-top: 20px;
+  height: 740px;
 }
