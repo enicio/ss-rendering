@@ -13,6 +13,7 @@ function App() {
         <div className="delails_left">
           <Details />
           <img className="delails_left_woman" src='./assets/image/image.png' alt="woman writing" />
+          <img className="shapeamarelo" src='./assets/image/shape-3.svg' alt="woman writing" />
         </div>
         <Content />
         <div className="details-right">

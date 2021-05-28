@@ -30,6 +30,11 @@
   margin-right: -100px;
 }
 
+.shapeamarelo {
+  margin-top: 180px;
+  margin-left: -50px;
+  z-index: 10;
+}
 
 /* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
