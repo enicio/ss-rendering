@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import './content.css'
 
 function Content() {
+  const [checkbox, setCheckbox ] = useState(false);
   return(
     <section className="content">
       <div className="content__title">
@@ -19,12 +20,14 @@ function Content() {
       <input className="content__input" type="text" placeholder="Type here what are you looking for"/>
       <div className="content__form__container">
       <form className="content__form">
-        <label htmlFor="teacher" className="content__label">
-          <input id="teacher" type="radio" name="whoiam"/>
+        <label htmlFor="teacher" className={(checkbox)? "teste" : "teste2"}>
+          <span className="checkmark"></span>
+          <input  onClick={() => setCheckbox(!checkbox)} id="teacher" type="radio" name="whoiam" checked={checkbox} />
           I'M A TEACHER
         </label>
-        <label htmlFor="student" className="content__label">
-          <input id="student" type="radio" name="whoiam"/>
+        <label htmlFor="student" className={(checkbox)? "teste2" : "teste"}>
+          <span className="checkmark"></span>
+          <input onClick={() => setCheckbox(!checkbox)} id="student" type="radio" name="whoiam" checked={!checkbox} />
           I'M A STUDENT
         </label>
       </form>

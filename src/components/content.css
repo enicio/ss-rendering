@@ -79,11 +79,11 @@
 }
 
 .content__label {
-  width: 162px;
+  /* width: 162px;
   background: #7955E8;
   border: 1px solid #A68EEF;
   box-sizing: border-box;
-  border-radius: 4px;
+  border-radius: 4px; */
 
   font-family: Open Sans;
   font-style: normal;
@@ -97,10 +97,59 @@
   color: #FFFFFF;
 }
 
+.teste {
+  width: 162px;
+  background: #7955E8;
+  border: 1px solid #A68EEF;
+  box-sizing: border-box;
+  border-radius: 4px;
 
-.content__label:active {
-  background-color: #ffd64f57;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 191.68%;
+  transition: 500ms;
+  color: #FFFFFF;
 }
+
+.teste2 {
+  width: 162px;
+  background: #7a55e852;
+  border: 1px solid #A68EEF;
+  box-sizing: border-box;
+  border-radius: 4px;
+  opacity: 0.4;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 191.68%;
+  transition: 500ms;
+  color: #FFFFFF;
+}
+
+/* .content__label .checkmark {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: red;
+  display: none;
+} */
+
+/* .content__label input {
+  display: none;
+} */
+
+/* .content__label input:checked + .checkmark{
+  display: inline-block;
+} */
+
+
+/* .content__label:active {
+  background-color: #ffd64f57;
+} */
 
 .content__button {
   width: 209px;
