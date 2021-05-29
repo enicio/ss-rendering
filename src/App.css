@@ -7,14 +7,15 @@
 
 .main {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1.5fr;
   max-width: 90%;
+  justify-content: center;
 }
 
 .delails_left {
   display: flex;
   margin-top: 143px;
-  margin-left: 210px;
+  margin-left: 0;
   /* height: 760px; */
   width: 510px;
 }
@@ -28,9 +29,11 @@
 }
 
 .details-right {
+  position: absolute;
   /* background-color: tomato; */
-  margin-left: 80px;
-  margin-right: -100px;
+  /* margin-left: 80px;
+  margin-right: -100px; */
+  right: 0;
 }
 
 /* .shapeamarelo {

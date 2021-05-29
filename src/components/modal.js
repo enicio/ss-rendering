@@ -53,13 +53,15 @@ function ModalF(props){
 
           {/* <h2 ref={_subtitle => (subtitle = _subtitle)}>Hello</h2> */}
           <button className="modal__closebutton" onClick={closeModal}>close</button>
-          <h2>Get Started</h2>
-          <h2>Just Login</h2>
+          <h2 className="modal__title-1" >Get Started</h2>
+          <h2 className="modal__title-2" >Just Login</h2>
           <form className="modal__form">
             <label htmlFor="username">
+              Username
               <input type="text" id="username" className="modal__input" />
             </label>
             <label htmlFor="password">
+              Password
               <input type="text" id="password" className="modal__input" />
             </label>
             <button type="submit">Login</button>

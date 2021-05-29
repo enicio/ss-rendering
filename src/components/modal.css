@@ -1,3 +1,18 @@
+/* .ReactModal__Content {
+  background-color: aquamarine !important;
+  width: 100% !important;
+  height: 100vh !important;
+} */
+
+.modal__title-1 {
+  color: white;
+  margin: auto;
+}
+
+.modal__title-2 {
+  color: #FFD74F;
+  margin: auto;
+}
 
 .modal__form {
   display: flex;
@@ -5,17 +20,47 @@
 }
 
 .modal__form input {
-  width: 100%;
+  width: 445px;
+  height: 60px;
+  background: #7955E8;
+  border: 1px solid #A68EEF;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .modal__form button {
   width: 20%;
-  margin-left: 78%;
 }
+
+.modal__form label {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 38px;
+    color: white;
+}
+
+.modal__form button[type="submit"] {
+  width: 132.52px;
+  height: 48px;
+  background: #FFD74F;
+  color: #744FF4;
+  border-radius: 5px;
+  border: none;
+  margin-left: 60%;
+  margin-top: 30px;
+  box-shadow: 1px 3px 11px -3px rgb(255 231 150 / 45%);
+}
+
 
 .modal__closebutton {
   position: absolute;
   top: 0;
   right: 0;
-
+  overflow: visible;
+  /* margin-right: -10px; */
 }
