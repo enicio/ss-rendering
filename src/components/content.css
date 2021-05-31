@@ -232,7 +232,11 @@
     display: none;
   }
 
-  .content__input {
+  /* .content__form__container {
+    width: 360px;
+  } */
+
+   .content__input {
     width: 270px;
     height: 50px;
     /* left: 1065px;
@@ -250,12 +254,25 @@
     line-height: 191.68%;
   /* identical to box height, or 31px */
   }
+
   .content__form__container {
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
+    margin: auto;
+    /* margin-top: 30px; */
+    /* display: flex; */
+    /* justify-content: space-between; */
     flex-direction: column;
+    width: 100% !important;
+    /* margin-right: 1px; */
   }
+
+  .content__form {
+    display: flex;
+    justify-content: center;
+    width: 290px;
+    height: 50px;
+    margin-bottom: 25px;
+  }
+
   .content .content__title .content__title-1 {
     margin: 0;
     font-family: Poppins;

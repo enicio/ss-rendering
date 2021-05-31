@@ -19,19 +19,31 @@ function Content() {
 
       <input className="content__input" type="text" placeholder="Type here what are you looking for"/>
       <div className="content__form__container">
-      <form className="content__form">
-        <label htmlFor="teacher" className={(checkbox)? "teste" : "teste2"}>
-          <span className={(checkbox)? "checked":"unchecked"}></span>
-          <input  onClick={() => setCheckbox(!checkbox)} id="teacher" type="radio" name="whoiam" checked={checkbox} />
-          I'M A TEACHER
-        </label>
-        <label htmlFor="student" className={(checkbox)? "teste2" : "teste"}>
-          <span className={(checkbox)? "unchecked":"checked"}></span>
-          <input onClick={() => setCheckbox(!checkbox)} id="student" type="radio" name="whoiam" checked={!checkbox} />
-          I'M A STUDENT
-        </label>
-      </form>
-      <button className="content__button" type="button" >SEARCH</button>
+        <form className="content__form">
+          <label htmlFor="teacher" className={(checkbox)? "teste" : "teste2"}>
+            <span className={(checkbox)? "checked":"unchecked"}></span>
+            <input
+                  onChange={() => setCheckbox(!checkbox)}
+                  id="teacher"
+                  type="radio"
+                  name="whoiam"
+                  checked={checkbox}
+                />
+            I'M A TEACHER
+          </label>
+          <label htmlFor="student" className={(checkbox)? "teste2" : "teste"}>
+            <span className={(checkbox)? "unchecked":"checked"}></span>
+            <input
+                  onChange={() => setCheckbox(!checkbox)}
+                  id="student"
+                  type="radio"
+                  name="whoiam"
+                  checked={!checkbox}
+                />
+            I'M A STUDENT
+          </label>
+        </form>
+        <button className="content__button" type="button" >SEARCH</button>
       </div>
     </section>
   );

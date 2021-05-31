@@ -54,18 +54,22 @@
 }
 
 
-@media ( max-width: 360px ) {
+@media only screen and ( max-width: 360px ) {
+  .App {
+    box-sizing: border-box;
+    /* max-width: calc(100% - 8px); */
+  }
   .main {
     flex-direction: column-reverse;
     margin-left: o;
     align-items: center;
-    box-sizing: border-box;
     margin-left: initial;
+    width: 280px;
   }
   .delails_left {
     display: flex;
     margin-top: initial;
-    margin-left: 0;
+    margin-left: initial;
     height: 350px;
     width: 300px;
   }
