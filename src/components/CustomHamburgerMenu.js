@@ -1,4 +1,7 @@
 import React from 'react';
+import CustomHamburgerMenu from './CustomGetStartedButton';
+
+import './header.css'
 
 function customHamburgerMenu(props) {
   const { toggleHamburgerMenu } = props;
@@ -20,7 +23,8 @@ const style = {
       <p>kombi</p>
       <p>Fusca</p>
       <p>Opala</p>
-      <button onClick={ () => toggleHamburgerMenu() } >X</button>
+      {/* <button onClick={ () => toggleHamburgerMenu() } >X</button> */}
+      <CustomHamburgerMenu toggleHamburgerMenu={ toggleHamburgerMenu }  />
     </div>
   );
 }
