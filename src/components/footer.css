@@ -4,3 +4,9 @@
   background: #200E64;
   margin-top: -150px;
 }
+
+@media ( max-width: 360px ) {
+  .footer {
+    margin-top: -120px;
+  }
+}

@@ -8,7 +8,7 @@
 .details .details__shape-1 {
   top: 130px;
   position: relative;
-  /* margin-top: 45px; */
+  margin-top: 45px;
   height: 722px;
   left: -12px;
 }
@@ -17,4 +17,24 @@
   position: absolute;
   margin-top: 20px;
   height: 740px;
+}
+
+@media ( max-width: 360px ) {
+  .details {
+    height: 430px;
+  }
+
+  .details .details__shape-1 {
+    top: 60px;
+    position: relative;
+    margin-top: initial;
+    height: 415px;
+    left: -12px;
+  }
+
+  .details .details__shape-2 {
+    position: absolute;
+    margin-top: 20px;
+    height: 413px;
+  }
 }

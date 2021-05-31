@@ -59,14 +59,50 @@
   color: #6F48EC;
 }
 
-@media ( max-width: 400px ) {
+#react-burger-menu-btn {
+  display: none;
+}
+.bm-overlay {
+  display: none;
+}
+
+.bm-burger-button {
+  display: none;
+}
+
+
+@media ( max-width: 360px ) {
   .header {
     min-width: 100%;
+    justify-content: flex-start;
+    margin-left: 27px;
   }
+
+  .header .header__logo {
+    margin-left: 21px;
+  }
+
   .header .header__menu {
     display: none;
   }
   .header .header__button {
     display: none;
   }
+
+  .bm-burger-button {
+    display: initial;
+  }
+
+  #react-burger-menu-btn {
+    display: initial;
+  }
+  .bm-overlay {
+    display: initial;
+  }
+
+  /* #react-burger-menu-btn {
+    width: 65px !important;
+    height: 65px !important;
+  } */
 }
+

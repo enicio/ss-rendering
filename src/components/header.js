@@ -1,5 +1,6 @@
 import React from 'react';
 // import logo from '../assets/header/logo.svg'
+import MenuHamburger from './menuHamburguer';
 
 import ModalF from './modal';
 
@@ -15,6 +16,8 @@ function Header() {
   return(
     <>
     <header className="header">
+      <MenuHamburger />
+      {/* <img className="header__menu__hamburger" src="assets/image/hamburger.svg"  alt="Menu hamburger"/> */}
       <img className="header__logo" src='assets/header/logo.svg' alt="logo"/>
       <nav className="header__menu">
         <p>How it works </p>

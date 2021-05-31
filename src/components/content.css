@@ -50,8 +50,8 @@
 .content__input {
   width: 601px;
   height: 56px;
-  left: 1065px;
-  top: 515px;
+  /* left: 1065px;
+  top: 515px; */
 
   background: #7955E8;
   border: 1px solid #A68EEF;
@@ -224,15 +224,19 @@
 @media ( max-width: 360px ) {
   .content {
     width: 360px;
-    height: 452px;
+    height: 324px;
     margin-top: 10px;
-    margin-left: 0px;
   }
+
+  .content .content__paragraph {
+    display: none;
+  }
+
   .content__input {
-    width: 250px;
-    height: 56px;
-    left: 1065px;
-    top: 515px;
+    width: 270px;
+    height: 50px;
+    /* left: 1065px;
+    top: 515px; */
 
     background: #7955E8;
     border: 1px solid #A68EEF;
@@ -260,10 +264,10 @@
     font-size: 24px;
     line-height: 57px;
     letter-spacing: -0.06em;
-  
+
     color: #FFFFFF;
   }
-  
+
   .content .content__title .content__title-2 {
     margin: 0;
     font-family: Poppins;
@@ -272,7 +276,7 @@
     font-size: 24px;
     line-height: 57px;
     letter-spacing: -0.06em;
-  
+
     color: #FFD74F;
   }
 }

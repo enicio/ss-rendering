@@ -64,14 +64,25 @@
   }
   .delails_left {
     display: flex;
-    margin-top: 143px;
+    margin-top: initial;
     margin-left: 0;
     height: 350px;
     width: 300px;
   }
   .details-right {
     display: none;
-    position: relative;
+  }
+
+  .delails_left .delails_left_woman {
+    position: absolute;
+    /* z-index: 100; */
+    width: 208px;
+    height: 415px;
+    margin-left: 60px;
+  }
+
+  .shapeamarelo {
+    display: none;
   }
 }
 
