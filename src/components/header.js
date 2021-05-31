@@ -32,7 +32,7 @@ function Header() {
       <button onClick={ () => openModalHeader(true)} className="header__button">Get Started</button>
     </header>
     {(modalIsOpen)?<ModalF openModal={openModalHeader} />: ''}
-    {(hamburgerMenu)?<CustomHamburgerMenu toggleHamburgerMenu={toggleHamburgerMenu}  />: ''}
+    {(hamburgerMenu)?<CustomHamburgerMenu functions={{ toggleHamburgerMenu, openModalHeader }}  />: ''}
     </>
   );
 }

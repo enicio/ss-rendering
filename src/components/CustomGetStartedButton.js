@@ -2,9 +2,10 @@ import React from 'react';
 
 
 function ButtonGetStarted(props) {
-  const { toggleHamburgerMenu } = props;
+  const { toggleHamburgerMenu, openModalHeader } = props.functions;
+  // console.log(props)
 const style = {
-  width: '165px',
+  width: '272px',
   height: '48px',
 
   background: '#FFD74F',
@@ -26,7 +27,9 @@ const style = {
 }
 
   return(
-    <button onClick={ () => toggleHamburgerMenu() }  style={ style } >Get Started</button>
+    <button onClick={ () => { toggleHamburgerMenu(); openModalHeader(true);} }
+      style={ style } >Get Started
+    </button>
   );
 }
 
