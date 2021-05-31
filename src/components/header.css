@@ -1,6 +1,6 @@
 .header {
   /* position: absolute; */
-  width: 1167px;
+  min-width: 1167px;
   height: 48px;
   margin-top: 27px;
   display: flex;
@@ -57,4 +57,16 @@
   letter-spacing: -0.02em;
 
   color: #6F48EC;
+}
+
+@media ( max-width: 400px ) {
+  .header {
+    min-width: 100%;
+  }
+  .header .header__menu {
+    display: none;
+  }
+  .header .header__button {
+    display: none;
+  }
 }

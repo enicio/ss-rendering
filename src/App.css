@@ -1,15 +1,16 @@
 .App {
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 
 .main {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  max-width: 90%;
+  display: flex;
+  /* grid-template-columns: 1fr 1.5fr; */
+  /* max-width: 90%; */
   justify-content: center;
+  margin-left: -135px;
 }
 
 .delails_left {
@@ -31,8 +32,8 @@
 .details-right {
   position: absolute;
   /* background-color: tomato; */
-  /* margin-left: 80px;
-  margin-right: -100px; */
+  /* margin-left: 80px; */
+  margin-right: -250px;
   right: 0;
 }
 
@@ -51,6 +52,29 @@
     height: 193px;
     width: 193px;
 }
+
+
+@media ( max-width: 360px ) {
+  .main {
+    flex-direction: column-reverse;
+    margin-left: o;
+    align-items: center;
+    box-sizing: border-box;
+    margin-left: initial;
+  }
+  .delails_left {
+    display: flex;
+    margin-top: 143px;
+    margin-left: 0;
+    height: 350px;
+    width: 300px;
+  }
+  .details-right {
+    display: none;
+    position: relative;
+  }
+}
+
 /* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
