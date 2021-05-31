@@ -24,7 +24,7 @@ const styles = {
           width={ '100%' }
           className={ "my-menu" }
           styles= { styles }
-          pageWrapId={ "main" }
+          noTransition
     >
        <p>How it works </p>
         <p>About Us</p>
