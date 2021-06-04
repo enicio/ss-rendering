@@ -68,7 +68,7 @@
   }
   .delails_left {
     display: flex;
-    margin-top: initial;
+    margin-top: 80px;
     margin-left: initial;
     height: 350px;
     width: 300px;

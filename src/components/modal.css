@@ -64,6 +64,7 @@
   height: 48px;
   background: #FFD74F;
   color: #744FF4;
+  font-weight: bold;
   border-radius: 5px;
   border: none;
   margin-left: 67%;
@@ -79,7 +80,7 @@
 
   width: 51px;
   height: 51px;
-  border-radius: 50%;
+  border-radius: 0 15px 0 50%;
   border: none;
 
   overflow: visible;

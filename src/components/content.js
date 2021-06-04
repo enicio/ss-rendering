@@ -20,7 +20,13 @@ function Content() {
       <input className="content__input" type="text" placeholder="Type here what are you looking for"/>
       <div className="content__form__container">
         <form className="content__form">
-          <label htmlFor="teacher" className={(checkbox)? "teste" : "teste2"}>
+          <label
+            htmlFor="teacher"
+            className={(checkbox)
+              ? "content__label__checked"
+              : "content__label__unchecked"
+              }
+          >
             <span className={(checkbox)? "checked":"unchecked"}></span>
             <input
                   onChange={() => setCheckbox(!checkbox)}
@@ -28,10 +34,16 @@ function Content() {
                   type="radio"
                   name="whoiam"
                   checked={checkbox}
-                />
+            />
             I'M A TEACHER
           </label>
-          <label htmlFor="student" className={(checkbox)? "teste2" : "teste"}>
+          <label
+            htmlFor="student"
+            className={(checkbox)
+              ? "content__label__unchecked"
+              : "content__label__checked"
+              }
+          >
             <span className={(checkbox)? "unchecked":"checked"}></span>
             <input
                   onChange={() => setCheckbox(!checkbox)}
@@ -39,7 +51,7 @@ function Content() {
                   type="radio"
                   name="whoiam"
                   checked={!checkbox}
-                />
+            />
             I'M A STUDENT
           </label>
         </form>
