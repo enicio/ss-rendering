@@ -10,7 +10,7 @@
 <img  src="https://ucarecdn.com/f3360d89-1da9-4133-be5f-e8353154fe13/-/preview/300x300/"/>
 </p>
 
-Projeto do dashboard da plataforma de ensino Eduick.
+Projeto do landpage da plataforma de ensino Eduick.
 Este projeto foi implementado utilizando a React com SSR ( server side rendering ).
 
 ## Demostração

@@ -7,8 +7,6 @@
 
 .main {
   display: flex;
-  /* grid-template-columns: 1fr 1.5fr; */
-  /* max-width: 90%; */
   justify-content: center;
   margin-left: -135px;
 }
@@ -17,13 +15,11 @@
   display: flex;
   margin-top: 143px;
   margin-left: 0;
-  /* height: 760px; */
   width: 510px;
 }
 
 .delails_left .delails_left_woman {
   position: absolute;
-  /* z-index: 100; */
   width: 384px;
   height: 767px;
   margin-left: 60px;
@@ -31,35 +27,21 @@
 
 .details-right {
   position: absolute;
-  /* background-color: tomato; */
-  /* margin-left: 80px; */
   margin-right: -250px;
   right: 0;
 }
 
-/* .shapeamarelo {
-  margin-top: 180px;
-  margin-left: -50px;
-  z-index: 10;
-} */
-
-
-.shapeamarelo {
+.main__shape-yellow {
   position: relative;
-    /* z-index: 10; */
-    top: 472px;
-    left: -54px;
-    height: 193px;
-    width: 193px;
+  top: 458px;
+  left: -54px;
+  height: 193px;
+  width: 193px;
 }
 
 
 @media only screen and ( max-width: 360px ) {
-  /* .App {
-    box-sizing: border-box;
-  } */
-
-  .main {
+   .main {
     flex-direction: column-reverse;
     margin-left: initial;
     align-items: center;
@@ -85,33 +67,7 @@
     margin-left: 60px;
   }
 
-  .shapeamarelo {
+  .main__shape-yellow {
     display: none;
   }
 }
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
