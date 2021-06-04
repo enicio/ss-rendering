@@ -64,6 +64,8 @@
   font-size: 16px;
   line-height: 191.68%;
 /* identical to box height, or 31px */
+  color: white;
+  padding: 15px;
 }
 
 .content__input::placeholder {
@@ -223,9 +225,14 @@
 
 @media ( max-width: 360px ) {
   .content {
-    width: 360px;
+    width: 100%;
     height: 324px;
     margin-top: 10px;
+    margin-left: initial;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .content .content__paragraph {
@@ -237,7 +244,7 @@
   } */
 
    .content__input {
-    width: 270px;
+    width: 90%;
     height: 50px;
     /* left: 1065px;
     top: 515px; */
@@ -258,23 +265,46 @@
   .content__form__container {
     margin: auto;
     /* margin-top: 30px; */
-    /* display: flex; */
-    /* justify-content: space-between; */
-    flex-direction: column;
-    width: 100% !important;
-    /* margin-right: 1px; */
-  }
-
-  .content__form {
     display: flex;
     justify-content: center;
-    width: 290px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .content__form__container .content__form {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
     height: 50px;
     margin-bottom: 25px;
   }
 
+  .content__button {
+    width: 90%;
+  }
+
+  .content__form label {
+    width: 155px;
+    margin-right: initial;
+  }
+
+  /* .content__form__container form:nth-child(1) label {
+    margin-right: 15px;
+  } */
+
+  /* .content__form .teste {
+    width: 180px;
+    margin-right: 2px;
+  }
+
+  .content__form .teste2 {
+    width: 180px;
+    margin-left: 2px;
+  } */
+
   .content .content__title .content__title-1 {
-    margin: 0;
+    margin-left: -50%;
     font-family: Poppins;
     font-style: normal;
     font-weight: 400;
@@ -286,7 +316,7 @@
   }
 
   .content .content__title .content__title-2 {
-    margin: 0;
+    margin-left: -50%;
     font-family: Poppins;
     font-style: normal;
     font-weight: 700;

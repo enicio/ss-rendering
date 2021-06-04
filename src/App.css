@@ -46,7 +46,7 @@
 
 .shapeamarelo {
   position: relative;
-    z-index: 10;
+    /* z-index: 10; */
     top: 472px;
     left: -54px;
     height: 193px;
@@ -61,10 +61,10 @@
 
   .main {
     flex-direction: column-reverse;
-    margin-left: o;
+    margin-left: initial;
     align-items: center;
     margin-left: initial;
-    width: 280px;
+    width: 100%;
   }
   .delails_left {
     display: flex;

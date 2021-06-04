@@ -22,17 +22,36 @@ function Header() {
 
   return(
     <>
-    <header className="header">
-      <img onClick={() => toggleHamburgerMenu()} className="header__menu__hamburger" src="assets/image/hamburger.svg"  alt="Menu hamburger"/>
-      <img className="header__logo" src='assets/header/logo.svg' alt="logo"/>
-      <nav className="header__menu">
-        <p>How it works </p>
-        <p>About Us</p>
-      </nav>
-      <button onClick={ () => openModalHeader(true)} className="header__button">Get Started</button>
-    </header>
-    {(modalIsOpen)?<ModalF openModal={openModalHeader} />: ''}
-    {(hamburgerMenu)?<CustomHamburgerMenu functions={{ toggleHamburgerMenu, openModalHeader }}  />: ''}
+      <header className="header">
+        <img
+          onClick={() => toggleHamburgerMenu()}
+          className="header__menu__hamburger"
+          src="assets/image/hamburger.svg"
+          alt="Menu hamburger"
+        />
+        <img
+          className="header__logo"
+          src='assets/header/logo.svg'
+          alt="logo"
+        />
+        <nav className="header__menu">
+          <p>How it works </p>
+          <p>About Us</p>
+        </nav>
+        <button
+          onClick={ () => openModalHeader(true)}
+          className="header__button">
+            Get Started
+        </button>
+      </header>
+      {(modalIsOpen)
+        ?<ModalF openModal={openModalHeader} />
+        : ''
+      }
+      {(hamburgerMenu)
+        ?<CustomHamburgerMenu functions={{ toggleHamburgerMenu, openModalHeader }}  />
+        : ''
+      }
     </>
   );
 }

@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Modal from 'react-modal';
 
 import './modal.css'
 
 const customStyles = {
   content : {
+    zIndex: '100',
     top                   : '50%',
     left                  : '50%',
     right                 : 'auto',
@@ -22,8 +23,10 @@ const customStyles = {
 Modal.setAppElement('#root')
 
 function ModalF(props){
+
   var subtitle;
-  const [modalIsOpen,setIsOpen] = React.useState(true);
+  const [modalIsOpen,setIsOpen] = useState(true);
+  const [ showPassword, setShowPassword ] = useState(true)
 
 //  function openModal() {
 //     setIsOpen(true);
@@ -32,6 +35,10 @@ function ModalF(props){
   function afterOpenModal() {
     // references are now sync'd and can be accessed.
     subtitle.style.color = '#f00';
+  }
+
+  function toggleShowPassword() {
+    setShowPassword(!showPassword)
   }
 
   function closeModal(){
@@ -52,9 +59,9 @@ function ModalF(props){
         >
 
           {/* <h2 ref={_subtitle => (subtitle = _subtitle)}>Hello</h2> */}
-          <button className="modal__closebutton" onClick={closeModal}>close</button>
+          <button className="modal__closebutton" onClick={closeModal}>X</button>
           <h2 className="modal__title-1" >Get Started</h2>
-          <h2 className="modal__title-2" >Just Login</h2>
+          <h2 className="modal__title-2" ><b>Just Login</b></h2>
           <form className="modal__form">
             <label htmlFor="username">
               Username
@@ -62,7 +69,15 @@ function ModalF(props){
             </label>
             <label htmlFor="password">
               Password
-              <input type="text" id="password" className="modal__input" />
+              <input type={(showPassword)?"password":"text"} id="password" className="modal__input" />
+              <button className="modal__showPassword__eye" onClick={toggleShowPassword} type="button">
+                <img
+                  src={(showPassword)
+                        ?'./assets/image/icon-eye.png'
+                        :'./assets/image/icon-eye-show.png'}
+                        alt="icon eye"
+                />
+              </button>
             </label>
             <button type="submit">Login</button>
           </form>

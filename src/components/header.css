@@ -77,13 +77,14 @@
 
 @media ( max-width: 360px ) {
   .header {
-    min-width: 100%;
+    min-width: initial;
+    width: 360px;
     justify-content: flex-start;
-    margin-left: 27px;
   }
 
   .header__menu__hamburger {
     display: inline;
+    margin-left: 25px;
   }
 
   .header .header__logo {
