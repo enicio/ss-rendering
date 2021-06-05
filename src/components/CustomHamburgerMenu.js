@@ -1,4 +1,5 @@
 import React from 'react';
+import { isCompositeComponentWithType } from 'react-dom/test-utils';
 import ButtonGetStarted from './CustomGetStartedButton';
 
 import './header.css'
@@ -30,6 +31,11 @@ const header__hamburger = {
 }
 
 const nav = {
+  display: "flex",
+  flexDirection: "column",
+}
+const a = {
+  textDecoration: "none",
   fontFamily: 'Open Sans',
   fontStyle: 'normal',
   fontWeight: 'normal',
@@ -38,13 +44,12 @@ const nav = {
   textAlign: 'center',
   letterSpacing: '-0.02em',
   color: '#FFFFFF',
+  marginBottom: "25px",
 }
 
 const closeButton = {
+  marginLeft: '30%',
   background: 'transparent',
-  color: 'white',
-  fontWeight: 'bold',
-  fontSize: '21px',
   border: 'none'
 }
 
@@ -52,11 +57,13 @@ const closeButton = {
     <div className="custom__hamburger__menu" style={ customHamburgerMenu }>
       <div className="custom__hamburger__menu__header" style={ header__hamburger } >
         <img className="header__logo" src='assets/header/logo.svg' alt="logo"/>
-        <button style={ closeButton } onClick={ () => toggleHamburgerMenu() } >X</button>
+        <button style={ closeButton } onClick={ () => toggleHamburgerMenu() } >
+          <img src="assets/image/btn--close.svg" alt="close button" />
+        </button>
       </div>
       <nav style={ nav } className="header__menu">
-        <p>How it works </p>
-        <p>About Us</p>
+        <a style={ a } href="/">How it works</a>
+        <a style={ a } href="/">About Us</a>
       </nav>
       <ButtonGetStarted functions={ {toggleHamburgerMenu, openModalHeader} }  />
     </div>

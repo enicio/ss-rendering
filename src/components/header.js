@@ -35,8 +35,8 @@ function Header() {
           alt="logo"
         />
         <nav className="header__menu">
-          <p>How it works </p>
-          <p>About Us</p>
+          <a href="/" >How it works </a>
+          <a href="/" >About Us</a>
         </nav>
         <button
           onClick={ () => openModalHeader(true)}

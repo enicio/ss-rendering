@@ -132,4 +132,9 @@
     font-weight: bold;
     font-size: 28px;
   }
+
+  .modal__showPassword__eye {
+    margin-top: -42px;
+    margin-left: 85%;
+   }
 }

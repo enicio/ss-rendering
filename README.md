@@ -36,7 +36,7 @@ Clone o projeto
 Mude para as pasta raiz
 
 ```bash
-  cd eduick-dashboard
+  cd ss-rendering
 ```
 
 Instale as dependencias

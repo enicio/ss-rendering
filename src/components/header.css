@@ -30,15 +30,15 @@
   line-height: 19px;
   /* identical to box height */
 
-  text-align: center;
-  letter-spacing: -0.02em;
-
-  color: #FFFFFF;
 }
 
-.header .header__menu p {
+.header .header__menu a {
   margin: 0 15px 0 15px;
   cursor: pointer;
+  text-decoration: none;
+  color: #FFFFFF;
+  text-align: center;
+  letter-spacing: -0.02em;
 }
 
 .header .header__button {
@@ -132,9 +132,5 @@
     background: lawngreen;
   }
 
-  /* #react-burger-menu-btn {
-    width: 65px !important;
-    height: 65px !important;
-  } */
 }
 

@@ -48,17 +48,13 @@ function ModalF(props){
 
     return (
       <div>
-        {/* <button onClick={openModal}>Open Modal</button> */}
         <Modal
           isOpen={modalIsOpen}
-          // onAfterOpen={afterOpenModal}
           onRequestClose={closeModal}
           style={customStyles}
           contentLabel="Example Modal"
           // className="modal"
         >
-
-          {/* <h2 ref={_subtitle => (subtitle = _subtitle)}>Hello</h2> */}
           <button className="modal__closebutton" onClick={closeModal}>X</button>
           <h2 className="modal__title-1" >Get Started</h2>
           <h2 className="modal__title-2" ><b>Just Login</b></h2>
